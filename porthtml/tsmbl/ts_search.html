@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/sub.css">
+
+	<title>TS교통안전공단::사전안내장</title>
+
+	<script type="text/javascript" src="../com_js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript"> 
+	 	
+				// font_size 
+				var nowZoom = 100;  
+				var maxZoom = 200;  
+				var minZoom = 80; 
+					function zoomIn() { 
+								if (nowZoom < maxZoom) { 
+												nowZoom += 1.4; 
+								} else {
+													return;
+						}
+								document.body.style.zoom = nowZoom + "%"; 
+						}  
+					function zoomOut() { 
+								if (nowZoom > minZoom) {
+											nowZoom -= 0.9;   
+								} else {
+										return; 
+					} 
+					document.body.style.zoom = nowZoom + "%"; 
+					}   
+					function zoomReset() { 
+								nowZoom = 100;  
+								document.body.style.zoom = nowZoom + "%"; 
+					}
+       </script>
+</head>
+
+<body>
+ 	<div id="wrap">
+		<div class="header">
+			<div class="top">
+				<h1><a title="사전안내장 페이지 이동" href="00_index.html" class="hidden"> TS교통안전공단 </a></h1>
+				<ol>
+					<li class="largeTxt"> <a title="글자크게" href="#;"  onclick="zoomIn();" >+</a> </li>
+					<li class="smallTxt">  <a title="글자작게" href="#;"  onclick="zoomOut();">-</a> </li>
+					<li class="gaTxt"> <a title="글자기본" href="#;" onclick="zoomReset();" >■</a> </li>
+				</ol>
+			</div> <!--top(E)-->
+			
+			<div class="gnb">
+				<ul> <!-- 해당 페이지일 시 a태그 class="on" -->
+					<li><a title="사전안내장" href="ts_idx.html">사전안내장</a></li>
+					<li><a title="검사소 찾기" href="ts_search.html" class="on">검사소 찾기</a></li>
+					<li><a title="검사 방법 안내" href="http://m.ts2020.kr/mobile/nsi/vii/MoNSIContents.do?fileName=MoCGIInspectItems&header=%EA%B2%80%EC%82%AC%EB%B0%A9%EB%B2%95%EA%B3%BC%20%ED%95%AD%EB%AA%A9">검사 방법 안내</a></li>				
+				</ul>
+			</div>
+		</div> <!--header(E)-->
+				
+		<div id="body">
+			<div class="containers">
+											
+				<div class="quick_btn"> 
+					<span class="search searh_2"><a title="지역별 검사소 보기" href="ts_area.html"><em>지역별 검사소 보기</em><img src="images/icon_5.png" alt="icon"></a> </span>
+					<span class="seach"><a title="내 주변 검사소 찾기" href="ts_myarea.html"><em>내 주변 검사소 찾기</em><img src="images/icon_1.png" alt="icon"></a> </span>
+				</div> 
+   								
+				<div class="info_box">
+					<div class="info_title">
+						<h3>전주자동차검사소</h3>
+						<span><a title="전화걸기" href="#" class="tell"><img src="images/tell_icon.png" alt="☎"></a> <a title="길안내 시작" href="#" class="wifi"><img src="images/wifi_icon.png" alt="img"> 길안내 시작</a></span>
+						<p>(54885) 전북 전주시 덕진구 신행로44(팔복동 3가)</p>
+					</div>
+						
+					<div class="info_body">
+						<div class="map"><img src="images/test_img.png" alt="testimg"></div>
+										 
+						<div class="list">
+							<h3>검사항목</h3>
+							<div class="tblwrp">
+								<table>
+									<caption class="hidden">검사항목테이블</caption>
+									<colgroup>
+										<col style="width:25%">
+										<col style="width:25%">
+										<col style="width:25%">
+										<col style="width:25%"> 
+									</colgroup>
+
+									<tbody> 
+										<tr>
+											<td rowspan="2"><span class="on">정기</span></td>
+											<th colspan="3">종합검사</th>
+										</tr>
+										<tr>
+											<td><span class="on">배출면제</span></td>
+											<td><span>부하검사<br>5.5톤 이하</span></td>
+											<td><span class="on">부하검사<br>5.5톤 초과</span></td>
+										</tr>
+										</tbody> 
+								</table>
+							</div>
+						</div>
+										 
+						<dl class="txtgroup">
+							<dt class="time">업무시간<strong>(교통안전공단 기준)</strong></dt>
+							<dd class="time">
+								<p><span>평 &nbsp; 일</span> 09:00~18:00(점심시간 - 12:00~13:00)</p>
+								<p><span>토요일</span> 09:00~13:00(점심시간 없이 검사 실행)</p>
+							</dd>
+							
+							<dt class="care">※ 유의사항</dt>
+							<dd class="care">
+								<table class="instbl_lst">
+									<caption>유의사항테이블</caption>
+									<colgroup>
+										<col style="width:15px">
+										<col style="width:auto"> 
+									</colgroup>
+
+									<tbody>
+										<tr>
+											<td>1.</td>
+											<td>해당 검사소는 토요일 자동차검사의 경우 ‘예약’이 필요합니다.</td>
+										</tr>
+
+										<tr>
+											<td>2.</td>
+											<td>자동차의 전조등, 제동등, 번호등의 점등상태 불량은 부적합 사항입니다. 검사를 받기 전에 미리 점검해주시기 바랍니다.</td>
+										</tr> 
+										<tr class="comm2">
+											<td class="bColor">※</td>
+											<td class="bColor">대형 및 특수차량의 경우 검사소에 검사가능여부를 문의하시기 바랍니다.</td>
+										</tr> 
+									</tbody> 
+								</table>																						 
+							</dd>
+						</dl> 
+					</div>
+				</div> <!--info_box(E)-->
+						 
+										 
+			</div> <!--containers(E)-->
+		</div> <!--body(E)-->
+   	</div> <!--wrap(E)-->
+   	
+   	 
+</body>
+</html>

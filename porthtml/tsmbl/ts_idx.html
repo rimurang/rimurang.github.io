@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<title>TS교통안전공단::사전안내장</title>
+
+	<script type="text/javascript" src="../com_js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../com_js/jquery.bpopup.min.js"></script> 
+	<script type="text/javascript">
+   	// Popup
+				function go_popup(index){
+    	$('#popup'+index).bPopup();
+     }
+	
+	   // Tell
+				function calNumber(num){
+					location.href="tel:"+num;
+					}	
+ 	
+				// font_size 
+				var nowZoom = 100;  
+				var maxZoom = 200;  
+				var minZoom = 80; 
+					function zoomIn() { 
+								if (nowZoom < maxZoom) { 
+												nowZoom += 1.4; 
+								} else {
+													return;
+						}
+								document.body.style.zoom = nowZoom + "%"; 
+						}  
+					function zoomOut() { 
+								if (nowZoom > minZoom) {
+											nowZoom -= 0.9;   
+								} else {
+										return; 
+					} 
+					document.body.style.zoom = nowZoom + "%"; 
+					}   
+					function zoomReset() { 
+								nowZoom = 100;  
+								document.body.style.zoom = nowZoom + "%"; 
+					}
+       </script>
+</head>
+
+<body>
+ 	<div id="wrap">
+		<div class="header">
+			<div class="top">
+				<h1><a title="사전안내장 페이지 이동" href="ts_idx.html" class="hidden"> TS교통안전공단 </a></h1>
+				<ol>
+					<li class="largeTxt"> <a title="글자크게" href="#;"  onclick="zoomIn();" >+</a> </li>
+					<li class="smallTxt">  <a title="글자작게" href="#;"  onclick="zoomOut();">-</a> </li>
+					<li class="gaTxt"> <a title="글자기본" href="#;" onclick="zoomReset();" >■</a> </li>
+				</ol>
+			</div> <!--top(E)-->
+			
+			<div class="gnb">
+				<ul> <!-- 해당 페이지일 시 a태그 class="on" -->
+					<li><a title="사전안내장" href="ts_idx.html" class="on">사전안내장</a></li>
+					<li><a title="검사소 찾기" href="ts_search.html">검사소 찾기</a></li>
+					<li><a title="검사 방법 안내" href="http://m.ts2020.kr/mobile/nsi/vii/MoNSIContents.do?fileName=MoCGIInspectItems&header=%EA%B2%80%EC%82%AC%EB%B0%A9%EB%B2%95%EA%B3%BC%20%ED%95%AD%EB%AA%A9">검사 방법 안내</a></li>	
+				</ul>
+			</div>
+	</div> <!--header(E)-->
+		
+	<div id="body">
+		<div class="containers">
+			<div class="info_box">
+				   <div class="info_title">	
+					귀하의<br>
+					<strong class="orColor">자동차 종합검사 유효기간 만료일</strong> 이 도래하였습니다.<br>아래의<strong class="bColor fS21" style="color: #0076cb !important;"> 검사 유효기간 이내에 검사</strong>를 받으시길
+					바랍니다.
+					</div>
+					<table class="instbl_lst">
+                        <caption>안내테이블</caption>
+                        <colgroup>
+                            <col style="width:32%">
+                            <col style="width:auto"> 
+                        </colgroup>
+             
+						<tbody>
+							<tr>
+								<th>소유자</th>
+								<td>홍 * *</td>
+							</tr>
+							
+							<tr>
+								<th>차량 등록번호</th>
+								<td>서울11 가1234</td>
+							</tr>
+							
+							<tr>
+								<th>검사 유효기간<br>&#40;만료일&#41;</th>
+								<td>2017.07.11 ~ 2017.10.11<span>&#40;2017.09.11&#41;</span></td>
+							</tr>
+							
+							<tr>
+								<th>검사 준비물</th>
+								<td>자동차 등록증<span>&#40;보험 등의 가입증명서는 전산 확인&#41;</span></td>
+							</tr>
+							
+							<tr>
+								<th>검사 비용</th>
+								<td>39,000<span>&#40;검사 비용은 실제와 상이할 수 있습니다.&#41;</span></td>
+							</tr>
+						</tbody>
+					</table>
+			</div> <!--info_box(E)-->
+						
+			<div class="quick_btn">  
+				<span class="seach"><a title="내 주변 검사소 찾기" href="ts_myarea.html"><em>내 주변 검사소 찾기</em><img src="images/icon_1.png" alt="icon"></a> </span>
+				<span class="call"><a title="자동차 검사 예약 및 문의 전화" href="tel:1577-0990" onClick="callNumber('1577-0990')"><em>자동차 검사 예약 및 문의 전화</em><img src="images/icon_2.png" alt="icon"></a> </span>
+				<span class="hpgo"><a title="홈페이지 바로가기" href="http://m.ts2020.kr/mobile/index.do" target="_blank"><em>홈페이지 바로가기</em><img src="images/icon_3.png" alt="icon"></a> </span>
+				<span class="info openMask"><a title="수수료 감면 안내" href="#" onclick="go_popup('1')"><em>수수료 감면 안내</em><img src="images/icon_4.png" alt="icon"></a> </span>	
+			</div> 
+		</div> <!--containers(E)-->
+	</div> <!--body(E)-->
+   	</div> <!--wrap(E)-->
+   	
+   	<!-- popup (s)-->			
+	<div class="inquiryBox1" id="popup1">
+         <div class="pop_head"> 
+			<p><strong>수수료 감면 안내</strong>
+			<span class="b-close"><img src="images/closed_ico.gif" alt="팝업 닫기"></span>
+			</p> 
+          </div> 
+          
+          <div class="pop_body">
+				<p>아래의 대상 중 해당하시는 사항을 선택하시면 상세 내역을 확인하실 수 있습니다.</p>
+											
+					<div class="faq">
+                     	<dl class="faq_list">
+                       		<dt><p>예약 할인<span class="search_btn"></span></p></dt>
+                         	<dd style="display: none;">
+                              	<ol>
+									<li><strong>대상요건</strong>
+										<p> 장애인복지법 제 32조 의거</p></li>
+										<li><strong>대상차종</strong>
+											<p> <b>비상업용</b> 승용, 12인승 이하 승합, 1톤 이하 화물차<span class="orColor">※ 장애인 복지시설 자동차는 감면대상 제외</span></p>
+											 </li>
+										<li><strong>감면율</strong>
+										<p> 30~50%(등급별 차등)</p></li>
+										<li><strong>구비서류</strong>
+										<p> 장애인 자동차 표지</p></li> 
+								</ol>
+                         </dd>
+                         
+                         <dt><p>장애인 차량 <span class="search_btn"></span></p></dt>
+                         <dd style="display: none;">
+							<ol>
+								<li><strong>대상요건</strong>
+								<p> 장애인복지법 제 32조 의거</p></li>
+								<li><strong>대상차종</strong>
+									<p> <b>비상업용</b> 승용, 12인승 이하 승합, 1톤 이하 화물차<span class="orColor">※ 장애인 복지시설 자동차는 감면대상 제외</span></p>
+									 </li>
+								<li><strong>감면율</strong>
+								<p> 30~50%(등급별 차등)</p></li>
+								<li><strong>구비서류</strong>
+								<p> 장애인 자동차 표지</p></li> 
+							</ol>
+                         </dd>
+                         
+                         <dt><p>국가 유공(상이)자<span class="search_btn"></span></p></dt>
+                         <dd style="display: none;">
+                              <ol>
+									<li><strong>대상요건</strong>
+										<p> 장애인복지법 제 32조 의거</p></li>
+										<li><strong>대상차종</strong>
+											<p> <b>비상업용</b> 승용, 12인승 이하 승합, 1톤 이하 화물차<span class="orColor">※ 장애인 복지시설 자동차는 감면대상 제외</span></p>
+											 </li>
+										<li><strong>감면율</strong>
+										<p> 30~50%(등급별 차등)</p></li>
+										<li><strong>구비서류</strong>
+										<p> 장애인 자동차 표지</p></li> 
+								</ol>
+                         </dd>
+                         
+                         <dt>
+                           <p>교통안전공단 지원 대상자
+                             <span class="search_btn"></span></p>
+                         </dt>
+                         <dd style="display: none;">
+                              <ol>
+									<li><strong>대상요건</strong>
+										<p> 장애인복지법 제 32조 의거</p></li>
+										<li><strong>대상차종</strong>
+											<p> <b>비상업용</b> 승용, 12인승 이하 승합, 1톤 이하 화물차<span class="orColor">※ 장애인 복지시설 자동차는 감면대상 제외</span></p>
+											 </li>
+										<li><strong>감면율</strong>
+										<p> 30~50%(등급별 차등)</p></li>
+										<li><strong>구비서류</strong>
+										<p> 장애인 자동차 표지</p></li> 
+								</ol>
+                         </dd>
+                        
+                        <dt>
+                           <p>한 부모가족
+                             <span class="search_btn"></span></p>
+                         </dt>
+                         <dd style="display: none;">
+                              <ol>
+									<li><strong>대상요건</strong>
+										<p> 장애인복지법 제 32조 의거</p></li>
+										<li><strong>대상차종</strong>
+											<p> <b>비상업용</b> 승용, 12인승 이하 승합, 1톤 이하 화물차<span class="orColor">※ 장애인 복지시설 자동차는 감면대상 제외</span></p>
+											 </li>
+										<li><strong>감면율</strong>
+										<p> 30~50%(등급별 차등)</p></li>
+										<li><strong>구비서류</strong>
+										<p> 장애인 자동차 표지</p></li> 
+								</ol>
+                         </dd>
+                         
+                         <dt>
+                           <p>기초생활수급자
+                             <span class="search_btn"></span></p>
+                         </dt>
+                         <dd style="display: none;">
+                              <ol>
+									<li><strong>대상요건</strong>
+										<p> 장애인복지법 제 32조 의거</p></li>
+										<li><strong>대상차종</strong>
+											<p> <b>비상업용</b> 승용, 12인승 이하 승합, 1톤 이하 화물차<span class="orColor">※ 장애인 복지시설 자동차는 감면대상 제외</span></p>
+											 </li>
+										<li><strong>감면율</strong>
+										<p> 30~50%(등급별 차등)</p></li>
+										<li><strong>구비서류</strong>
+										<p> 장애인 자동차 표지</p></li> 
+								</ol>
+                         </dd>
+                       </dl>
+                      
+            </div>
+            
+            <div class="comm">
+				<p>※ 자세한 사항은 홈페이지 참조</p>
+				<p>※ 증빙서류 미지참시 검사가 끝난 이후 60일 이내 증빙서류 지참하여 방문하시면 환불 가능합니다.</p>
+			</div>
+		</div>
+      </div> <!--popup(E)-->  
+   	
+   	<script type="text/javascript">
+         $('div.faq dl dd').css('display','none');
+         $('div.faq dl dt').click(function(){
+         $(this).find('.search_btn').toggleClass('selected');
+         $('div.faq dl dd').slideUp('fast');
+         $('div.faq .faq_list dt p').css('color','#333');
+												if ($(this).find('.search_btn').hasClass('selected')){
+                 $('+dd',this).slideDown('fast');
+                 $('div.faq dl dt .search_btn').removeClass('selected');
+                 $(this).find('.search_btn').addClass('selected');
+                }else{
+                  $('+dd',this).slideUp('fast');
+                 }
+         });
+     </script>
+
+</body>
+</html>

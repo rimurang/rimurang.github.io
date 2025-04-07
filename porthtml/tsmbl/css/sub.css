@@ -1,0 +1,72 @@
+@charset "utf-8"; 
+
+/* Reset */
+.containers{width:100%;min-height: 100%;padding:10px;background-color:#e8e8e8; background-image: url(../images/sub_back.png);background-repeat: no-repeat;background-size: 100%;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;float: left;position: absolute;background-position: bottom;}
+
+.info_box{padding: 17px 13px;background:rgba(255,255,255,0.92); border:1px solid #cfcfcf; float: left;  width: 100%; box-sizing: border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box; margin-top: 10px;}
+.quick_btn{margin-top:0px}
+
+/* 01_search */
+.info_title{float:left; width:100%; border-bottom:1px solid #ccc;}
+.info_title h3{ float:left; font-size: 18px; padding-top:4px }
+.info_title span { float:right; margin-top:3px}
+.info_title span a{display:inline-block; padding:2% 10px; font-weight:bold; color:#fff; height:18px; border-radius: 8px; line-height: 20px;   }
+.info_title span a img{height:20px; margin-top:-3px; }
+a.tell{background: #808285;border-bottom:2px solid #5c5e61;margin-right: -2px;}
+a.wifi{background: #0190d2; border-bottom:2px solid #006ecb; text-shadow: 1px 1px 2px #0074c6; -moz-text-shadow: 1px 1px 2px #0074c6; -webkit-text-shadow: 1px 1px 2px #0074c6;}
+.info_title p{width:100%; float:left; margin:10px 0 10px}
+.info_title p{width:100%; float:left; margin:10px 0 8px}
+
+.info_body{width:100%; margin-top:15px; float: left; }
+.info_body div.map{border-top:2px solid #333;text-align: center;background: #dde0da;margin-bottom: 10px;}
+.info_body img{ max-width: 100%; max-height:250px}
+.txtgroup{padding-top:16px;}
+.txtgroup dt.time{ width:100%; background: url(../images/time_icon.gif); background-repeat: no-repeat; background-position:left 4px; background-size:16px; font-size: 16px; font-weight: bold; color:#0076cb; padding:0 0 3px 20px; }
+.txtgroup dt.time strong{color:#666; font-size:13px; } 
+.txtgroup dd.time p{background: url(../images/blit.gif);background-repeat: no-repeat;background-position: left 9px;padding-left:8px;font-weight: bold;background-size:4px;margin-left:20px;margin-top:3px;line-height: 21px;}
+.txtgroup dd.time p span{ background:url(../images/gray_line.gif);background-repeat: no-repeat; background-position:right 4px; background-size: 1px;  margin-right:2px; padding-right:7px;   }
+
+.txtgroup dt.care{font-size:15px; font-weight: bold; color:#fd5629; margin:12px 0 5px 0}
+.txtgroup dd.care{padding-left:15px; line-height: 21px}
+.txtgroup dd.care table td{vertical-align: top;padding: 1px 0;}
+
+/* 02_area */ 
+.info_boxN{padding-left:0; padding-right:0;padding-bottom: 0}
+.info_boxN div.faq > dl{border-top:1px solid #ccc}
+.area_title{clear:both;background:#f7f7f7; margin: -17px 0px; padding: 17px;}
+.area_title p{letter-spacing: 0px}
+.select {width:100%; text-align: center; margin-top:15px;  }
+.select strong{font-size:18px; display: inline-block; margin-top:5px;  }
+.select select{width:67%; height:35px; margin-top:-7px; border-left:1px solid #dddddd; border-top:1px solid #dddddd; border-right:1px solid #b8b8b8;border-bottom:1px solid #b8b8b8; margin-left:5px }
+div.faq{max-height:none; }
+div.faq .faq_list > dt p{ padding-top: 15px; padding-bottom: 15px; background-position-y: 18px;}
+div.faq .faq_list .txtgroup{padding-bottom: 16px;padding-top: 0px;}
+div.faq dl dd.imgwifi{width:100%; box-sizing: border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;}
+dd.imgwifi h3{font-size:14px;letter-spacing: 0px;}
+dd.imgwifi div.area_map{width: 100%;margin-top:10px;}
+dd.imgwifi div.area_map .imgT{border:1px solid #ccc;margin: 0 auto;display: block;min-height: 114px;}
+dd.imgwifi div.area_map span{display: block;width:100%;text-align: center;}
+dd.imgwifi div.area_map span a{display:inline-block;padding: 8px 0px;text-align: center;font-weight:bold;color:#fff;font-size:17px;height:18px;border-radius: 5px;line-height: 20px;width: 100%;margin: 5px auto;max-width: 75%;}
+dd.imgwifi div.area_map span a.wifi img{margin-top:-5px; height:20px;  }
+dd.imgwifi div.info_txt span a{display:inline-block;padding: 4px 2%;text-align: center;border-radius: 5px;line-height: 18px;position: absolute;top: 0px;left: 130px;}
+dd.imgwifi div.info_txt{width: 100%;margin-top:10px;box-sizing: border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;}
+dd.imgwifi div.info_txt p.orColor{font-size:13px}
+dd.imgwifi div.info_txt ul li strong{display: block; margin-bottom:2px;display: block; background: url(../images/q_blit.gif); background-repeat: no-repeat; background-size: 10px 2px; background-position: 0px 8px; padding-left:15px;}
+dd.imgwifi div.info_txt ul li{margin-top:8px; letter-spacing: 0px}
+dd.imgwifi div.info_txt ul li:nth-child(1){margin-top:0px;position: relative;}
+dd.imgwifi div.info_txt ul li p{ margin-bottom:5px; padding-left:15px;}
+dd.imgwifi div.list{margin-top:10px;width:100%;text-align: center;background: #f8f8f8;}
+div.list h3{background-color: #ececec;text-align: left;background: url(../images/q_blit.gif);background-repeat: no-repeat;background-size: 10px 2px;background-position: 0px 8px;padding: 0 0 5px 15px;font-size:15px;}
+div.list .tblwrp{}
+div.list table{border-left: 1px solid #d9d9d9; border-top:1px solid #d9d9d9} 
+div.list table th, div.list table td{padding: 5px 2px;border:1px solid #d9d9d9;border-width: 0 1px 1px 0px;clear:both;line-height:18px;font-size: 13px;background-color: #fff; text-align: center;}
+div.list table th{padding:6px 10px 7px;border-width:0 0 1px 0;border-right:1px solid #d9d9d9;font-weight:600;background-color: #ededed;color: #333;}
+div.list table span{font-weight: 600;color: #bdbdbd; letter-spacing: -0.08em;word-break: break-all;}
+div.list table span.on{color: #0076cb}
+
+.refshbox{border:1px solid #e1e1e1;background-color: #eeeeee;position: relative;min-height: 66px;margin: 0 0 15px 0; display: table;width: 100%;}
+.refshbox p{padding: 6px 68px 6px 10px;line-height: 21px;font-weight: 600;display: table-cell;vertical-align: middle;} 
+.refshbox a{position: absolute;top: 0;right: 0;display: block;height: 100%;}
+.refshbox a img{height:100%; max-width:84px}
+
+tr.comm2{ font-weight: bold; font-size: 13px;}
