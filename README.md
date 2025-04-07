@@ -1,1 +1,0 @@
-# rimurang.github.io
